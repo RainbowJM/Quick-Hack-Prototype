@@ -6,6 +6,11 @@
 
 body {
     height: 100vh;
+    /* background: url(../img/flower.webp) no-repeat center center fixed; */
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+
 }
 
 header {
@@ -21,6 +26,7 @@ header section {
     height: 8em;
     display: flex;
     align-items: center;
+    padding-bottom: 2em;
 }
 
 img[target=logo] {
@@ -32,6 +38,7 @@ img[target=logo] {
 
 h1 {
     margin: 10px;
+    color: black;
 }
 
 nav {
@@ -49,4 +56,27 @@ nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 18px;
+}
+
+main {
+    height: 100vh;
+    height: 100dvh;
+    scroll-snap-type: x mandatory;
+    place-self: center;
+    display: flex;
+    overflow-x: auto;
+    gap: 2em;
+    width: 95%;
+}
+
+main section {
+    display: grid;
+    place-content: center;
+    scroll-snap-align: center;
+    block-size: 90vmin;
+    aspect-ratio: 1;
+    border: solid black 3px;
+    position: relative;
+    box-shadow: 4px 4px 10px black;
+    background: url(../img/flower.webp) no-repeat center center fixed;
 }
