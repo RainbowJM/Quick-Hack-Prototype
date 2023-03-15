@@ -5,18 +5,17 @@
 }
 
 body {
-    height: 100vh;
-    /* background: url(../img/flower.webp) no-repeat center center fixed; */
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-
+    display: grid;
+    place-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 header {
     width: 100%;
     padding-left: 8%;
     padding-right: 8%;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -31,7 +30,6 @@ header section {
 img[target=logo] {
     width: 100px;
     cursor: pointer;
-    margin: 30px 0;
     border-radius: 50%;
 }
 
@@ -67,15 +65,29 @@ main {
     gap: 2em;
     width: 95%;
 }
-
+main header{
+    width: 100%;
+}
 main section {
     display: grid;
     place-content: center;
     scroll-snap-align: center;
-    block-size: 90vmin;
+    block-size: 80vmin;
     aspect-ratio: 1;
     border: solid black 3px;
     position: relative;
     box-shadow: 4px 4px 10px black;
-    background: url(../img/flower.webp) no-repeat center center fixed;
+    background: url(../img/flower.webp);
+    filter: contrast(80%);
+}
+
+main section h1 {
+    color: white;
+    position: absolute;
+    top: 0.5em;
+    left: 1em;
+}
+
+main section h1::first-letter{
+    text-transform: uppercase;
 }
