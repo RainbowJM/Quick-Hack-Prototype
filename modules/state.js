@@ -1,7 +1,13 @@
+const loader = document.querySelector(".loading");
+
 export function errorHandler() {
 
 }
 
-export function loading(){}
+export function loading(){
+    loader.classList.add("display");
+}
 
-export function hideLoading(){}
+export function hideLoading(){
+    loader.classList.remove("display");
+}

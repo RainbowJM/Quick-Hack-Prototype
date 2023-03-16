@@ -12,6 +12,7 @@ export function cleanGeneralData(info) {
         created: info.created_at,
         name: info.name,
         issues: info.open_issues_count,
-        visibility: info.visibility
+        visibility: info.visibility,
+        language: info.language
     }
 }

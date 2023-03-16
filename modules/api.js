@@ -29,6 +29,7 @@ export function fetchData() {
         owner = info.map(cleanOwnerData);
         console.log(owner);
         updatedGeneralData = info.map(cleanGeneralData)
+        console.log(updatedGeneralData)
 
         updateMain();
 

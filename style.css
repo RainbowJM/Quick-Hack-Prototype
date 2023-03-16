@@ -65,7 +65,6 @@ main {
     gap: 2em;
     width: 100%;
     margin-left: 5em;
-    /* margin-right: 5em; */
 }
 
 main header {
@@ -120,6 +119,10 @@ main section div:hover {
     }
 }
 
+main section p{
+    color: white;
+}
+
 main section ul {
     position: fixed;
     bottom: 1em;
@@ -136,4 +139,24 @@ main section ul li a {
     color: white;
     background-color: rgb(167, 101, 115);
     padding: .5em 1.5em;
+}
+
+.loading {
+    display: grid;
+    place-content: center;
+    width: 10em;
+    height: 10em;
+    clip-path: polygon(50% 0%, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0% 50%, 50% 0%);
+    background-color: rgb(167, 101, 115);
+    transform-style: preserve-3d;
+    animation: rotate 1s infinite alternate linear;
+}
+
+.loading.display{
+    opacity: 1;
+}
+
+@keyframes rotate {
+    0% { transform: rotateY(0turn);  }
+    100% { transform: rotateY(1turn)}
 }
