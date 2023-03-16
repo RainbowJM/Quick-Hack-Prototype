@@ -24,7 +24,7 @@ Welcome to my GitHub Portfolio
 - [x] Link to README's
 - [x] About page of the Developer
 - [x] Routing
-- [ ] Loading State
+- [x] Loading State
 - [ ] Error State
 
 ### Content
@@ -33,7 +33,7 @@ Welcome to my GitHub Portfolio
 
 ### CSS Techniques
 - [x] Scroll snap
-- [x] Animation
+- [x] 3D Animation
 
 --- 
 
