@@ -19,3 +19,14 @@ Welcome to my Github Portfolio
 ### Features
 - [x] Fetch data from Github API
 - [x] Overview all repositories
+- [x] Link to readme's
+- [x] About page of the Developer
+- [x] Routing
+
+### Content
+- [x] About Page
+- [x] Home Page
+
+### CSS Techniques
+- [x] Scroll snap
+- [x] Animation
