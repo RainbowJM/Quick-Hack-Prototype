@@ -1,4 +1,4 @@
-import { fetchReadMe, info, repo, updatedGeneralData} from "./api.js";
+import { fetchReadMe, info, updatedGeneralData} from "./api.js";
 
 const mainView = document.querySelector("main");
 const sectionView = document.querySelector("main section ul")

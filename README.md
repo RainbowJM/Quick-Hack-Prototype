@@ -21,7 +21,7 @@ Welcome to my GitHub Portfolio
 ### Features
 - [x] Fetch data from GitHub API
 - [x] Overview of all repositories
-- [x] Link to README's
+- [] Link to README's
 - [x] About page of the Developer
 - [x] Routing
 - [x] Loading State

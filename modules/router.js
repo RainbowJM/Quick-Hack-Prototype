@@ -1,4 +1,5 @@
-import { fetchUser } from "./api.js"
+import { owner } from "./api.js";
+
 const routerView = document.querySelector("main");
 
 export function onRouteChanged() {
@@ -22,13 +23,15 @@ export function onRouteChanged() {
 }
 
 function about() {
-    let hi = fetchUser();
     routerView.innerHTML = `<section id="about">
-                                <h1></h1>
+                                <h2>Jevona Magdalena</h2>
                                 <div></div>
                             </section>`;
 
-    console.log(hi);
+    const h1 = document.querySelector("div");
+    h1.innerHTML = owner[0].owner
+
+    console.log(owner);
 }
 
 function home() {
