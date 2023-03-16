@@ -22,6 +22,8 @@ Welcome to my Github Portfolio
 - [x] Link to readme's
 - [x] About page of the Developer
 - [x] Routing
+- [ ] Loading State
+- [ ] Error State
 
 ### Content
 - [x] About Page
@@ -30,3 +32,7 @@ Welcome to my Github Portfolio
 ### CSS Techniques
 - [x] Scroll snap
 - [x] Animation
+
+--- 
+
+## Sketch Book

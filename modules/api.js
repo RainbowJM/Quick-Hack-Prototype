@@ -1,11 +1,12 @@
-import { modifyMain, updateMain } from "./ui.js";
-import { cleanGeneralData } from "./render.js"
+import { modifyMain, modifySection, updateMain } from "./ui.js";
+import { cleanGeneralData, cleanOwnerData } from "./render.js"
 import { loading, hideLoading, errorHandler } from "./state.js";
 
 let url = "https://api.github.com/users/RainbowJM/repos";
 export let info;
 export let updatedGeneralData;
 export let repo;
+export let owner;
 
 export function fetchData() {
     loading();
@@ -23,7 +24,12 @@ export function fetchData() {
         info = json;
 
         modifyMain();
+        // modifySection();
+
+        owner = info.map(cleanOwnerData);
+        console.log(owner);
         updatedGeneralData = info.map(cleanGeneralData)
+
         updateMain();
 
     })
@@ -34,7 +40,7 @@ export function fetchData() {
 }
 
 export function fetchReadMe(repoName){
-    console.log(repoName)
+    // console.log(repoName)
     url = `https://api.github.com/repos/RainbowJM/${repoName}/readme`;
     fetch(url)
     .then((r) => {
@@ -62,3 +68,8 @@ export function fetchReadMe(repoName){
     });
 }
 
+
+export function fetchUser(){
+    let a = "hello";
+    return a;
+}

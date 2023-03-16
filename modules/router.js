@@ -1,4 +1,4 @@
-
+import { fetchUser } from "./api.js"
 const routerView = document.querySelector("main");
 
 export function onRouteChanged() {
@@ -22,10 +22,13 @@ export function onRouteChanged() {
 }
 
 function about() {
+    let hi = fetchUser();
     routerView.innerHTML = `<section id="about">
                                 <h1></h1>
                                 <div></div>
                             </section>`;
+
+    console.log(hi);
 }
 
 function home() {
