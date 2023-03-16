@@ -24,7 +24,6 @@ export function fetchData() {
         info = json;
 
         modifyMain();
-        // modifySection();
 
         owner = info.map(cleanOwnerData);
         console.log(owner);
@@ -41,7 +40,6 @@ export function fetchData() {
 }
 
 export function fetchReadMe(repoName){
-    // console.log(repoName)
     url = `https://api.github.com/repos/RainbowJM/${repoName}/readme`;
     fetch(url)
     .then((r) => {
@@ -55,22 +53,9 @@ export function fetchReadMe(repoName){
         hideLoading();
 
         repo = json;
-
-        // console.log(repo)
-        // modifyMain();
-        // console.log(info)
-        // updatedGeneralData = info.map(cleanGeneralData)
-        // console.log(updatedGeneralData)
-        // updateMain();
     })
     .catch((error) => {
         alert(error)
         errorHandler();
     });
-}
-
-
-export function fetchUser(){
-    let a = "hello";
-    return a;
 }
