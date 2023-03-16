@@ -22,7 +22,7 @@ export function onRouteChanged() {
 }
 
 function about() {
-    routerView.innerHTML = `<section>
+    routerView.innerHTML = `<section id="about">
                                 <h1></h1>
                                 <div></div>
                             </section>`;
