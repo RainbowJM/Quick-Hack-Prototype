@@ -1,8 +1,8 @@
 # Quick Hack Prototype
 ## Table of Content
-- [General]()
-- [Requirements]()
-- [Sketch Book]()
+- [General](https://github.com/RainbowJM/Quick-Hack-Prototype/blob/main/README.md#general)
+- [Requirements](https://github.com/RainbowJM/Quick-Hack-Prototype/blob/main/README.md#requirements)
+- [Sketch Book](https://github.com/RainbowJM/Quick-Hack-Prototype/blob/main/README.md#sketch-book)
 
 ## General
 In this repository you will find the assignment we got to create a portfolio of our projects, while using the knowledge of Web App From Scratch and CSS to the rescue.
@@ -22,7 +22,7 @@ Welcome to my GitHub Portfolio
 ### Features
 - [x] Fetch data from GitHub API
 - [x] Overview of all repositories
-- [] Link to README's
+- [ ] Link to README's
 - [x] About page of the Developer
 - [x] Routing
 - [x] Loading State
