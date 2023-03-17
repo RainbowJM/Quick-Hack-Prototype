@@ -81,7 +81,8 @@ main section {
     border: solid black 3px;
     position: relative;
     box-shadow: 4px 4px 10px black;
-    background: url("../img/flower.webp");
+    background-image: url("../img/flower.webp");
+    -webkit-border-image: url("../img/flower.webp");
     filter: contrast(80%);
 }
 
